@@ -1,29 +1,23 @@
 package demo;
 
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
-//Selenium Imports
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.remote.BrowserType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.Select;
-///
 
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
-public class TestCases {
+public class HyperLinks {
+
     ChromeDriver driver;
-    public TestCases()
+    public HyperLinks()
     {
         System.out.println("Constructor: TestCases");
         WebDriverManager.chromedriver().timeout(30).setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();;
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
     }
@@ -36,13 +30,12 @@ public class TestCases {
 
     }
 
-    
-    public  void testCase01(){
+
+    public  void hyperLinksCount(){
         System.out.println("Start Test case: testCase01");
         driver.get("https://in.bookmyshow.com/explore/home/chennai");
         List<WebElement> size = driver.findElements(By.xpath("//a"));
         System.out.println(size.size());
     }
-
 
 }
