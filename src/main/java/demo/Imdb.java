@@ -58,6 +58,8 @@ public class Imdb {
         }
         System.out.println(movieName.getText() + " " + year);
 
+        //For newest movie make year as 0(zero) and in If condition yearNumber>year make these changes
+
         //**************** highest user ratings *********************
         WebElement highestRatedMovie = driver.findElement(By.xpath("//tbody/tr[1]/td[2]/a"));
         System.out.println("highest rated movie on Imdb " + highestRatedMovie.getText());
