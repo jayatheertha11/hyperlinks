@@ -15,9 +15,9 @@ public class App {
 //        SearchAmazon search = new SearchAmazon();
 //        search.searchAmazon();
 //        search.endTest();
-        BookMyShow book = new BookMyShow();
-        book.bookMyShow();
-        book.endTest();
+//        BookMyShow book = new BookMyShow();
+//        book.bookMyShow();
+//        book.endTest();
 //        Frames frame = new Frames();
 //        frame.frames();
 //        frame.endTest();
@@ -30,9 +30,9 @@ public class App {
 //        Linkedln l = new Linkedln();
 //        l.linkedinPost();
 //        l.endTest();
-//        PostImageInLinkedin post = new PostImageInLinkedin();
-//        post.postingAnImage();
-//        post.endTest();
+        PostImageInLinkedin post = new PostImageInLinkedin();
+        post.postingAnImage();
+        post.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, IOException, AWTException {
